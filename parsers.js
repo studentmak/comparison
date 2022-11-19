@@ -4,7 +4,7 @@ import fs from 'fs';
 
 export function convertExcelDooglysToJson (){
     const result = excelToJson({
-        source: fs.readFileSync('./Data/Dooglys.xlsx'),
+        source: fs.readFileSync('./Data/Dooglys.xlsx'), //Add the data file to the "Data" directory and name it "Doogles" with the extension ".xlsx"
         header: {
             rows: 1
         },
@@ -23,7 +23,7 @@ export function convertExcelDooglysToJson (){
 
 export function convertExcelTildaToJson (){
     const result = excelToJson({
-        source: fs.readFileSync('./Data/Tilda.xlsx'),
+        source: fs.readFileSync('./Data/Tilda.xlsx'), //Add the data file to the "Data" directory and name it "Tilda" with the extension ".xlsx"
         header: {
             rows: 1
         },
